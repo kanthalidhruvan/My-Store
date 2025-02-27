@@ -1,4 +1,4 @@
-*{
+/* *{
     margin: 0;  
   }
   .container {
@@ -32,4 +32,108 @@
       height: 100%;
       padding: 20px;
       transition: 2s;
+  } 
+   
+*{
+    margin: 0;  
   }
+  .container {
+      margin: 0;
+  }
+  .header {
+      padding: 10px;
+      background-color:pink;
+      display: flex;
+      justify-content: space-between;
+  }
+  .productBlock{
+      background-color: silver;
+  }
+  .row {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+  
+  }
+  .box {
+      background-color: white;
+      margin: 10px;
+      border-radius: 20px;
+      padding: 30px;
+  }
+  .cartBlock {
+      background-color: silver;
+      width: 300px;
+      position: fixed;
+      top:0px;
+      left:100%;
+      height: 100%;
+      padding: 20px;
+      transition: 2s;
+  }
+  
+  .login {
+      border: 1px solid black;
+      padding: 50px;
+      width: 500px;
+      margin: auto;
+   
+  }
+  
+  .login input,button{
+      margin: 10px;
+      padding: 10px;
+      box-sizing: border-box;
+  }
+  
+  .registration {
+      border: 1px solid black;
+      text-align: center;
+      padding: 50px;
+      width: 500px;
+      margin: auto;
+  
+  }
+  
+  .registration input,button{
+      margin: 10px;
+      padding: 10px;
+      box-sizing: border-box;
+  }
+  
+  .menu li {
+      display: inline-block;
+      padding: 5px;
+  }
+  */
+  .container {
+    margin-top: 30px;
+}
+
+.header {
+    padding: 15px;
+    background-color: #007bff;
+    color: white;
+    text-align: center;
+}
+
+.cartBlock {
+    background-color: white;
+    width: 300px;
+    position: fixed;
+    top: 0;
+    right: -100%;
+    height: 100%;
+    padding: 20px;
+    transition: 0.5s;
+    border-left: 2px solid #007bff;
+}
+
+.cartBlock.active {
+    right: 0;
+}
+
+.card img {
+    height: 200px;
+    object-fit: cover;
+}
